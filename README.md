@@ -39,35 +39,35 @@ The project contains multiple files. We will focus on the ones in Asset => BoidT
 
 All the scripts to create Boids with Entities. You will use GameObjects as prefabs, but need to attach the “ConvertToEntity” script, from the unity.entities package, to them.
 
-# DOTS Spawner
+### DOTS Spawner
 
 This script is attached to the BoidSpawner GameObject. You need to enter the prefab as a GameObject, the radius within which the boids will spawn and the number of Boids to create. Give them a random position and orientation within the radius with the two according methods.
 
-# SpawnerCoordinates
+### SpawnerCoordinates
 
 A class that returns the x, y and z positions of the BoidSpawner Game Object. We need them to make the boids loop around their spawn point and not the origin.
 
-# Data - MoveSpeedData
+### Data - MoveSpeedData
 
 Script attached to the DOTS boid prefab. IComponentData with a float3 direction, velocity, turn speed and radius (in which the boid will be contained). The values can be changed directly on the prefab.
 
-# System - MoveSystem
+### System - MoveSystem
 
 Creates movement for the boids. They will go forward according to a set direction. When they go out of the predefined radius, they will turn back.
 
-# System - WaveSystem
+### System - WaveSystem
 
 Create a wave-style effect, Boids move up and down and not just forward. For a more natural look.
 
-# System - RunawaySystem
+### System - RunawaySystem
 
 Script applied to all boids, when they get near an object with the player tag, they run away from him by speeding up and trying to avoid him.
 
-# System - AvoidCollisionSystem
+### System - AvoidCollisionSystem
 
 Script applied to all boids, to make them avoid walls by turning around them.
 
-# Tag - BoidTag
+### Tag - BoidTag
 
 Attached to the boid prefab. Creates a Tag to assign a GameObject as a Boid, so that he can get the Boid Behavior.
 
