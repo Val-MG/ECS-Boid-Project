@@ -3,6 +3,15 @@ Valentin MIGDAL
 valentin.mig@gmail.com
 
 
+
+# VIDEO DEMO
+_________________________________________________________________________
+
+
+![Boid_gif_demo](https://user-images.githubusercontent.com/63231423/156813399-1cb43432-13ae-47a7-8401-026b0f72bc6a.gif)
+
+
+
 # BOIDS DOCUMENTATION
 _________________________________________________________________________
 
